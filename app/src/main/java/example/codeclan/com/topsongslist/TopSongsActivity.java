@@ -4,13 +4,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
-import static example.codeclan.com.topsongslist.R.*;
-import static example.codeclan.com.topsongslist.R.id.image;
+import static example.codeclan.com.topsongslist.R.id;
+import static example.codeclan.com.topsongslist.R.layout;
 
 public class TopSongsActivity extends AppCompatActivity {
 
@@ -28,8 +27,8 @@ public class TopSongsActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(id.list);
         listView.setAdapter(songsAdapter);
 
-        ImageView myImageView = (ImageView) findViewById(id.list);
-        myImageView.setImageResource(image);
+//        ImageView myImageView = (ImageView) findViewById(id.list);
+//        myImageView.setImageResource(image);
     }
 
     public void getSong(View listItem) {
